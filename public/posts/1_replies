@@ -1,0 +1,11 @@
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "id": "https://thehcj.neocities.org/posts/1_replies",
+  "type": "Collection",
+  "first": {
+    "id": "https://thehcj.neocities.org/posts/1_replies",
+    "type": "CollectionPage",
+    "next": "https://thehcj.neocities.org/posts/1_replies_more",
+    "partOf": "https://thehcj.neocities.org/posts/1_replies",
+    "items": []
+  }
