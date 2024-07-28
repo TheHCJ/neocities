@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Harley's website. Connect with me on various social media platforms.">
+    <meta name="author" content="Harley">
+    <title>Harley's Website</title>
+    <!-- Importing Google Fonts and FontAwesome -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="https://ka-f.fontawesome.com/releases/v6.5.2/css/free.min.css?token=76ce513091">
+    <style>
+        body {
+            background-image: url("https://mrhcj.neocities.org/neocity.png");
+            background-size: cover;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            color: lightblue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow-y: auto;
+        }
+        .welcome-message {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .welcome-message p {
+            margin: 0;
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin: 0 0 20px;
+        }
+        .social-icons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 30px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            transition: transform 0.3s ease-in-out;
+        }
+        .social-icons a:hover {
+            transform: scale(1.1);
+        }
+        .social-icons a span {
+            margin-left: 10px;
+            font-size: 18px;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-left: 270px; /* Ensure the content does not overlap with the sidebar */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            align-items: bottom;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="welcome-message">
+                <h2>MrHCJ</h2>
+                <p>I'm a teenage techie with an interest in decentralised social media protocols 🕸️</p>
+            </div>
+            <h2>Social links</h2>
+            <div class="social-icons">
+                <a href="https://threads.net/mrhcjones" title="Threads" aria-label="Threads">
+                    <i class="fa-brands fa-threads" aria-hidden="true"></i>
+                    <span>Threads</span>
+                </a>
+                <a href="https://bsky.app/profile/did:plc:5f2c6awh4ffekm7srmi4d6zg" title="Bluesky" aria-label="Bluesky">
+                    <i class="fa-brands fa-bluesky" aria-hidden="true"></i>
+                    <span>Bluesky</span>
+                </a>
+                <a href="https://github.com/TheHCJ" title="GitHub" aria-label="GitHub">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span>GitHub</span>
+                </a>
+                <a rel="me" href="https://fosstodon.org/@hcj" title="Mastodon" aria-label="Mastodon">
+                    <i class="fa-brands fa-mastodon" aria-hidden="true"></i>
+                    <span>Mastodon</span>
+                </a>
+                <a href="https://discord.gg/HT3cjr3g26" title="Discord" aria-label="Discord">
+                    <i class="fa-brands fa-discord" aria-hidden="true"></i>
+                    <span>Discord</span>
+                </a>
+            </div>
+            <footer>
+                <p>Photo by <a href="https://unsplash.com/@fakurian?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer">Milad Fakurian</a> on <a href="https://unsplash.com/photos/purple-and-white-heart-illustration-nY14Fs8pxT8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
+            </footer>
+        </aside>
+        <main class="content">
+            <script src="https://cdn.jsdelivr.net/npm/bsky-embed@0.1.5/dist/bsky-embed.es.js" async></script>
+            <bsky-embed
+                username="mrhcj.neocities.org"
+                mode="dark"
+                link-target="_blank"
+                link-image="true"
+                load-more="true"
+                limit="5">
+            </bsky-embed>
+        </main>
+    </div>
+</body>
+</html>
