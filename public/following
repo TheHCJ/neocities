@@ -1,7 +1,0 @@
-{
-    "@context": "https://www.w3.org/ns/activitystreams",
-    "id": "https://thehcj.neocities.org/following",
-    "type": "OrderedCollection",
-    "totalItems": 1,
-    "first": "https://thehcj.neocities.org/following_accts"
-}

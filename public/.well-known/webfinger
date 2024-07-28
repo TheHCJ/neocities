@@ -1,8 +1,0 @@
-{
-    "subject": "acct:justin@thehcj.neocities.org",
-    "links": [{
-        "rel": "self",
-        "type": "application/activity+json",
-        "href": "https://thehcj.neocities.org/justin"
-    }]
-}
