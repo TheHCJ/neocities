@@ -1,0 +1,84 @@
+body {
+    background-image: url("https://mrhcj.neocities.org/neocity.png");
+    background-size: cover;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+a {
+    color: lightblue;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.container {
+    display: flex;
+    flex: 1;
+}
+.sidebar {
+    width: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+.welcome-message {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.welcome-message p {
+    margin: 0;
+}
+.sidebar h2 {
+    text-align: center;
+    margin: 0 0 20px;
+}
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-icons a {
+    color: white;
+    font-size: 30px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+.social-icons a span {
+    margin-left: 10px;
+    font-size: 18px;
+}
+.content {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 270px; /* Ensure the content does not overlap with the sidebar */
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: bottom;
+}
+footer p {
+    margin: 5px 0;
+}
