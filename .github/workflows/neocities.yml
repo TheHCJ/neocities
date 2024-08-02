@@ -22,6 +22,6 @@ jobs:
       - name: Deploy to Nekoweb
         uses: mp-pinheiro/nekoweb-deploy@0.2.4
         with:
-          api_token: ${{ secrets.NEKOWEB_API_TOKEN }}
-          cleanup: false
-          dist_dir: public
+          API_KEY: ${{ secrets.NEKOWEB_API_TOKEN }}
+          CLEANUP: false
+          DEPLOY_DIR: public
